@@ -1,7 +1,5 @@
 $(function() {
-
-
-
+     
     $('#link_reg').on('click', function() {
         $('.login-box').hide()
         $('.reg-box').show();
@@ -61,6 +59,7 @@ $(function() {
                 //把token放入localStorage
             localStorage.setItem('token', res.token)
             location.href = "/index.html"
+            console.log(res);
         })
     })
 
