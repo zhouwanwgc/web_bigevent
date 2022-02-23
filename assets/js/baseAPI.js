@@ -12,7 +12,9 @@ $.ajaxPrefilter(function(option) {
     
     //无论ajax成功还是失败，都会执行
     option.complete=function(res){
+            
         if(res.responseJSON.status == 1 || res.responseJSON.message == '身份认证失败！'){
+            console.log(res.responseJSON);
              //跳转到login页面
              location.href = '/login.html';               
              //强制清除token

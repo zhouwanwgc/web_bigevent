@@ -1,0 +1,16 @@
+body {
+    background-color: #f2f3f5;
+}
+
+form {
+    margin: 15px;
+    background-color: #fff;
+}
+
+.layui-card {
+    margin: 15px;
+}
+
+#pwd_form {
+    width: 500px;
+}
