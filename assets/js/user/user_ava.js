@@ -28,7 +28,8 @@ $(function() {
 
         //(2)根据选择的文件，创建一个对应的 URL 地址：
         var newImgURL = URL.createObjectURL(file)
-        console.log(newImgURL);
+
+
 
         //(3)先销毁旧的裁剪区域，再重新设置图片路径，之后再创建新的裁剪区域：
         $image .cropper('destroy')    // 销毁旧的裁剪区域
